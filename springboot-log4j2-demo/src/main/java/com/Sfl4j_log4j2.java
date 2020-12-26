@@ -1,18 +1,18 @@
 package com;
 
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Calendar;
 
-public class Log4j2 {
+public class Sfl4j_log4j2 {
 
 
-    /**
-     * 定义日志器对象
-     */
-    private static Logger log = LogManager.getLogger(Log4j2.class);
+
+    private static Logger log = LoggerFactory.getLogger(Sfl4j_log4j2.class);
 
 
 
@@ -29,10 +29,12 @@ public class Log4j2 {
             log.error("======error:{}",i);
         }
         long end =Calendar.getInstance().getTime().getTime();
+
         log.warn(String.valueOf(end));
 
         log.warn("fininsh"+String.valueOf(end -start));
         System.out.println("fininshabc"+String.valueOf(end -start));
 
     }
+
 }

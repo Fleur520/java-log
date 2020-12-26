@@ -12,8 +12,7 @@
         <module>sfl4j-demo</module>
         <module>logback-demo</module>
         <module>log4j2-demo</module>
-        <module>common</module>
-        <module>springboot-log4j2</module>
+        <module>springboot-log4j2-demo</module>
         <module>springboot-logback</module>
     </modules>
 
@@ -67,7 +66,7 @@
     <build>
         <plugins>
             <!-- 指定jdk -->
-         <!--   <plugin>
+       <!--     <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
