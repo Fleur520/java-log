@@ -1,15 +1,13 @@
-package com;
 
-
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import java.util.Calendar;
 
-public class Log4j {
 
+public class JCL {
 
-
-    public static final Logger log = Logger.getLogger(Log4j.class);
+    public static Log log = LogFactory.getLog(JCL.class);
 
 
     public static void main(String[] args) {
@@ -17,7 +15,7 @@ public class Log4j {
         long start = Calendar.getInstance().getTime().getTime();
         log.warn(String.valueOf(start));
 
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 10; i++) {
             log.trace("======trace"+i);
             log.debug("======debug"+i);
             log.info("======info"+i);
@@ -25,10 +23,10 @@ public class Log4j {
             log.error("======error"+i);
         }
         long end =Calendar.getInstance().getTime().getTime();
+
         log.warn(String.valueOf(end));
 
         log.warn("fininsh"+String.valueOf(end -start));
         System.out.println("fininshabc"+String.valueOf(end -start));
     }
-
 }

@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>log4j2</artifactId>
+    <artifactId>log4j2-demo</artifactId>
 
 <!--    <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -17,8 +17,6 @@
     </properties>-->
 
     <dependencies>
-
-
 
         <!-- 使用 slf4j 作为日志门面 -->
         <dependency>
