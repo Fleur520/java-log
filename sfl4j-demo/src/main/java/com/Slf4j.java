@@ -10,12 +10,9 @@ public class Slf4j {
 
 
     /**
-     *
+     * 日志对象
      */
-
-
-
-    public static final Logger log = LoggerFactory.getLogger(Slf4j.class);
+    private static final Logger log = LoggerFactory.getLogger(Slf4j.class);
 
 
     /**
